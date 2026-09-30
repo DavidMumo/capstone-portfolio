@@ -70,49 +70,77 @@
                 <div class="h-1 w-20 bg-brand mx-auto mt-4 rounded-full"></div>
             </div>
             
-            <!-- Resumes Download Grid -->
+            <!-- Resumes PDF Preview Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <div class="bg-background p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition group text-center">
-                    <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-file-word text-2xl text-blue-600"></i>
+                <!-- English Resume -->
+                <div class="bg-background p-4 rounded-2xl border border-gray-200 hover:shadow-lg transition flex flex-col h-[500px]">
+                    <div class="flex justify-between items-center mb-4 px-2">
+                        <h3 class="text-sm font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> English Resume</h3>
+                        <a href="public/resumes/resume-english.pdf" target="_blank" class="text-xs bg-brand text-white hover:bg-brandDark font-semibold px-3 py-1 rounded transition">Full Screen</a>
                     </div>
-                    <h3 class="text-xl font-bold text-textMain mb-4">English Resume</h3>
-                    <a href="public/resumes/resume-english.docx" download class="inline-block w-full bg-surface border-2 border-brand text-brand hover:bg-brand hover:text-white font-semibold px-6 py-2 rounded-lg transition">Download .docx</a>
+                    <object data="public/resumes/resume-english.pdf" type="application/pdf" class="w-full flex-grow rounded-xl border border-gray-200 bg-white shadow-inner">
+                        <div class="flex flex-col items-center justify-center h-full p-4 text-center">
+                            <p class="text-sm text-textMuted mb-2">Preview not supported.</p>
+                            <a href="public/resumes/resume-english.pdf" class="text-brand font-bold underline">Download PDF</a>
+                        </div>
+                    </object>
                 </div>
                 
-                <div class="bg-background p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition group text-center">
-                    <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-file-word text-2xl text-blue-600"></i>
+                <!-- Kiswahili Resume -->
+                <div class="bg-background p-4 rounded-2xl border border-gray-200 hover:shadow-lg transition flex flex-col h-[500px]">
+                    <div class="flex justify-between items-center mb-4 px-2">
+                        <h3 class="text-sm font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Kiswahili Resume</h3>
+                        <a href="public/resumes/resume-kiswahili.pdf" target="_blank" class="text-xs bg-brand text-white hover:bg-brandDark font-semibold px-3 py-1 rounded transition">Full Screen</a>
                     </div>
-                    <h3 class="text-xl font-bold text-textMain mb-4">Kiswahili Resume</h3>
-                    <a href="public/resumes/resume-kiswahili.docx" download class="inline-block w-full bg-surface border-2 border-brand text-brand hover:bg-brand hover:text-white font-semibold px-6 py-2 rounded-lg transition">Download .docx</a>
+                    <object data="public/resumes/resume-kiswahili.pdf" type="application/pdf" class="w-full flex-grow rounded-xl border border-gray-200 bg-white shadow-inner">
+                        <div class="flex flex-col items-center justify-center h-full p-4 text-center">
+                            <p class="text-sm text-textMuted mb-2">Preview not supported.</p>
+                            <a href="public/resumes/resume-kiswahili.pdf" class="text-brand font-bold underline">Download PDF</a>
+                        </div>
+                    </object>
                 </div>
 
-                <div class="bg-background p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition group text-center">
-                    <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-file-word text-2xl text-blue-600"></i>
+                <!-- Indigenous Resume -->
+                <div class="bg-background p-4 rounded-2xl border border-gray-200 hover:shadow-lg transition flex flex-col h-[500px]">
+                    <div class="flex justify-between items-center mb-4 px-2">
+                        <h3 class="text-sm font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Indigenous Resume</h3>
+                        <a href="public/resumes/resume-indigenous.pdf" target="_blank" class="text-xs bg-brand text-white hover:bg-brandDark font-semibold px-3 py-1 rounded transition">Full Screen</a>
                     </div>
-                    <h3 class="text-xl font-bold text-textMain mb-4">Indigenous Resume</h3>
-                    <a href="public/resumes/resume-indigenous.docx" download class="inline-block w-full bg-surface border-2 border-brand text-brand hover:bg-brand hover:text-white font-semibold px-6 py-2 rounded-lg transition">Download .docx</a>
+                    <object data="public/resumes/resume-indigenous.pdf" type="application/pdf" class="w-full flex-grow rounded-xl border border-gray-200 bg-white shadow-inner">
+                        <div class="flex flex-col items-center justify-center h-full p-4 text-center">
+                            <p class="text-sm text-textMuted mb-2">Preview not supported.</p>
+                            <a href="public/resumes/resume-indigenous.pdf" class="text-brand font-bold underline">Download PDF</a>
+                        </div>
+                    </object>
                 </div>
             </div>
 
             <!-- Autobiography Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-textMain rounded-2xl p-10 shadow-xl text-center relative overflow-hidden">
+                <!-- Autobiographical Essay Preview -->
+                <div class="bg-textMain rounded-2xl p-6 shadow-xl flex flex-col h-[600px] relative overflow-hidden">
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-brand opacity-20 rounded-full blur-xl"></div>
-                    <i class="fa-solid fa-book-open text-4xl text-teal-300 mb-6 relative z-10"></i>
-                    <h3 class="text-2xl font-bold text-white mb-3 relative z-10">Autobiographical Essay</h3>
-                    <p class="text-slate-300 mb-8 relative z-10">Comprehensive 20-30 page personal and academic journey.</p>
-                    <a href="public/essays/autobiographical-essay.docx" download class="relative z-10 bg-brand hover:bg-brandDark text-white font-bold px-8 py-3 rounded-lg transition shadow-lg">Download Essay</a>
+                    <div class="flex justify-between items-center mb-4 relative z-10 px-2">
+                        <h3 class="text-xl font-bold text-white"><i class="fa-solid fa-file-pdf text-teal-300 mr-2"></i> Autobiographical Essay</h3>
+                        <a href="public/essays/autobiographical-essay.pdf" target="_blank" class="text-sm bg-brand hover:bg-brandDark text-white font-bold px-4 py-2 rounded-lg transition shadow-lg">View Full PDF</a>
+                    </div>
+                    <object data="public/essays/autobiographical-essay.pdf" type="application/pdf" class="w-full flex-grow rounded-xl bg-gray-100 border border-gray-700 relative z-10">
+                        <div class="flex flex-col items-center justify-center h-full text-center p-4">
+                            <p class="text-slate-800 mb-2 font-semibold">Browser block active.</p>
+                            <a href="public/essays/autobiographical-essay.pdf" class="text-brand font-bold underline">Download PDF</a>
+                        </div>
+                    </object>
                 </div>
                 
-                <div class="bg-textMain rounded-2xl p-10 shadow-xl text-center relative overflow-hidden">
+                <!-- Autobiography Presentation Download -->
+                <div class="bg-textMain rounded-2xl p-10 shadow-xl text-center relative overflow-hidden flex flex-col justify-center items-center">
                     <div class="absolute bottom-0 left-0 -mb-4 -ml-4 w-24 h-24 bg-orange-500 opacity-20 rounded-full blur-xl"></div>
-                    <i class="fa-solid fa-person-chalkboard text-4xl text-orange-400 mb-6 relative z-10"></i>
+                    <i class="fa-solid fa-person-chalkboard text-5xl text-orange-400 mb-6 relative z-10"></i>
                     <h3 class="text-2xl font-bold text-white mb-3 relative z-10">Autobiography Presentation</h3>
-                    <p class="text-slate-300 mb-8 relative z-10">Visual slide deck summarizing the autobiographical essay.</p>
-                    <a href="public/presentations/autobiography-presentation.pptx" download class="relative z-10 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg transition shadow-lg">Download Presentation</a>
+                    <p class="text-slate-300 mb-8 relative z-10 max-w-sm">Visual slide deck summarizing the comprehensive 20-30 page autobiographical essay.</p>
+                    <a href="public/presentations/autobiography-presentation.pptx" download class="relative z-10 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg transition shadow-lg w-full max-w-xs">
+                        Download .pptx
+                    </a>
                 </div>
             </div>
         </div>
@@ -133,7 +161,6 @@
                         <video controls class="w-full h-full object-cover">
                             <source src="public/videos/innovation-video.mp4" type="video/mp4">
                         </video>
-                        <!-- Placeholder text visible before video is uploaded -->
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gray-900 -z-10">
                             <i class="fa-solid fa-video-slash text-4xl mb-2 text-gray-500"></i>
                             <span class="text-sm font-semibold text-gray-400">Video Pending Upload</span>
@@ -142,18 +169,22 @@
                     <h3 class="text-xl font-bold text-textMain px-2">20-Minute Innovation Video</h3>
                 </div>
                 
-                <!-- Downloads -->
+                <!-- Downloads & Previews -->
                 <div class="lg:col-span-2 space-y-6">
-                    <div class="bg-surface rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition text-center">
+                    <!-- Presentation Download -->
+                    <div class="bg-surface rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition text-center">
                         <i class="fa-solid fa-file-powerpoint text-4xl text-orange-500 mb-4"></i>
                         <h3 class="text-lg font-bold text-textMain mb-4">Innovation Presentation</h3>
                         <a href="public/presentations/innovation-presentation.pptx" download class="block w-full bg-gray-100 hover:bg-gray-200 text-textMain font-semibold py-3 rounded-lg transition">Download .pptx</a>
                     </div>
                     
-                    <div class="bg-surface rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition text-center">
-                        <i class="fa-solid fa-file-word text-4xl text-blue-600 mb-4"></i>
-                        <h3 class="text-lg font-bold text-textMain mb-4">Trilingual Abstracts</h3>
-                        <a href="public/abstracts/innovation-abstracts.docx" download class="block w-full bg-gray-100 hover:bg-gray-200 text-textMain font-semibold py-3 rounded-lg transition">Download .docx</a>
+                    <!-- Abstracts PDF Preview -->
+                    <div class="bg-surface rounded-2xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition flex flex-col h-[320px]">
+                        <div class="flex justify-between items-center mb-3 px-2">
+                            <h3 class="font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Trilingual Abstracts</h3>
+                            <a href="public/abstracts/innovation-abstracts.pdf" target="_blank" class="text-xs text-brand hover:underline font-semibold">Full Screen</a>
+                        </div>
+                        <object data="public/abstracts/innovation-abstracts.pdf" type="application/pdf" class="w-full flex-grow rounded-lg border border-gray-200 bg-white"></object>
                     </div>
                 </div>
             </div>
@@ -170,56 +201,81 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                 <!-- Culture Block -->
-                <div class="bg-background rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+                <div class="bg-background rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
                     <div class="p-6 border-b border-gray-200">
                         <h3 class="text-xl font-bold text-textMain">Culture & Gender Awareness</h3>
                     </div>
-                    <div class="p-6">
-                        <div class="bg-gray-900 rounded-lg h-48 mb-6 flex items-center justify-center relative overflow-hidden">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="bg-gray-900 rounded-lg h-48 mb-6 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                             <video controls class="w-full h-full object-cover">
                                 <source src="public/videos/culture-video.mp4" type="video/mp4">
                             </video>
                             <span class="absolute text-gray-500 font-semibold -z-10">Video Pending Upload</span>
                         </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <a href="public/abstracts/culture-abstracts.docx" download class="flex items-center justify-center gap-2 bg-white border border-gray-200 text-textMain py-2 rounded-lg font-semibold hover:border-brand hover:text-brand transition">
-                                <i class="fa-solid fa-file-word text-blue-500"></i> Abstracts
+                        
+                        <div class="grid grid-cols-1 gap-4 flex-grow">
+                            <!-- Presentation Download -->
+                            <a href="public/presentations/culture-presentation.pptx" download class="flex items-center justify-center gap-2 bg-white border border-gray-200 text-textMain py-3 rounded-lg font-semibold hover:border-brand hover:text-brand transition shadow-sm">
+                                <i class="fa-solid fa-file-powerpoint text-orange-500"></i> Download Slides
                             </a>
-                            <a href="public/presentations/culture-presentation.pptx" download class="flex items-center justify-center gap-2 bg-white border border-gray-200 text-textMain py-2 rounded-lg font-semibold hover:border-brand hover:text-brand transition">
-                                <i class="fa-solid fa-file-powerpoint text-orange-500"></i> Slides
-                            </a>
+                            
+                            <!-- PDF Preview -->
+                            <div class="h-64 flex flex-col border border-gray-200 rounded-lg p-3 bg-white shadow-sm mt-2">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="text-sm font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> Abstracts</h4>
+                                    <a href="public/abstracts/culture-abstracts.pdf" target="_blank" class="text-xs text-brand hover:underline font-semibold">Open</a>
+                                </div>
+                                <object data="public/abstracts/culture-abstracts.pdf" type="application/pdf" class="w-full flex-grow rounded border border-gray-100 bg-gray-50"></object>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Society Block -->
-                <div class="bg-background rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+                <div class="bg-background rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
                     <div class="p-6 border-b border-gray-200">
                         <h3 class="text-xl font-bold text-textMain">Modern Society Challenges</h3>
                     </div>
-                    <div class="p-6">
-                        <div class="bg-gray-900 rounded-lg h-48 mb-6 flex items-center justify-center relative overflow-hidden">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="bg-gray-900 rounded-lg h-48 mb-6 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                             <video controls class="w-full h-full object-cover">
                                 <source src="public/videos/society-challenge-video.mp4" type="video/mp4">
                             </video>
                             <span class="absolute text-gray-500 font-semibold -z-10">Video Pending Upload</span>
                         </div>
-                        <a href="public/abstracts/society-abstracts.docx" download class="flex items-center justify-center gap-2 w-full bg-white border border-gray-200 text-textMain py-3 rounded-lg font-semibold hover:border-brand hover:text-brand transition">
-                            <i class="fa-solid fa-file-word text-blue-500 text-lg"></i> Download Challenge Abstracts
-                        </a>
+                        
+                        <!-- Challenge Abstracts PDF Preview -->
+                        <div class="flex-grow flex flex-col border border-gray-200 rounded-lg p-3 bg-white shadow-sm">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-sm font-bold text-textMain"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> Challenge Abstracts</h4>
+                                <a href="public/abstracts/society-abstracts.pdf" target="_blank" class="text-xs text-brand hover:underline font-semibold">Full Screen</a>
+                            </div>
+                            <object data="public/abstracts/society-abstracts.pdf" type="application/pdf" class="w-full flex-grow rounded border border-gray-100 bg-gray-50 min-h-[200px]"></object>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Photographic Essay -->
-            <div class="bg-textMain rounded-2xl p-12 text-center text-white shadow-xl relative overflow-hidden">
+            <!-- Photographic Essay PDF Preview -->
+            <div class="bg-textMain rounded-2xl p-8 shadow-xl relative overflow-hidden flex flex-col h-[800px]">
                 <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=')]"></div>
-                <i class="fa-solid fa-camera-retro text-5xl text-brand mb-6 relative z-10"></i>
-                <h3 class="text-3xl font-bold mb-4 relative z-10">Photographic Essay</h3>
-                <p class="text-gray-300 mb-8 max-w-2xl mx-auto relative z-10">A visual documentation addressing key challenges, developments, and daily realities identified within the African community.</p>
-                <a href="public/essays/photographic-essay.docx" download class="relative z-10 inline-block bg-brand hover:bg-brandDark text-white font-bold px-10 py-4 rounded-xl shadow-lg transition">
-                    Download Document Portfolio
-                </a>
+                <div class="relative z-10 flex flex-col md:flex-row md:justify-between items-center mb-6 px-4">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <i class="fa-solid fa-camera-retro text-4xl text-brand mr-4"></i>
+                        <h3 class="text-3xl font-bold text-white">Photographic Essay</h3>
+                    </div>
+                    <a href="public/essays/photographic-essay.pdf" target="_blank" class="bg-brand hover:bg-brandDark text-white font-bold px-6 py-3 rounded-lg shadow-lg transition">
+                        View Full Screen
+                    </a>
+                </div>
+                <p class="text-gray-300 mb-6 relative z-10 px-4">A visual documentation addressing key challenges, developments, and daily realities identified within the African community.</p>
+                
+                <object data="public/essays/photographic-essay.pdf" type="application/pdf" class="w-full flex-grow rounded-xl bg-gray-100 border border-gray-700 relative z-10 shadow-inner">
+                    <div class="flex flex-col items-center justify-center h-full text-center p-4">
+                        <p class="text-slate-800 mb-2 font-semibold">Browser block active.</p>
+                        <a href="public/essays/photographic-essay.pdf" class="text-brand font-bold underline">Download Photographic Essay PDF</a>
+                    </div>
+                </object>
             </div>
         </div>
     </section>
